@@ -1,0 +1,140 @@
+
+body{
+	margin: 0px;background-color: #f2f2f2;scroll-behavior: smooth;
+
+}
+#announcement{
+	height: 45px;width: 100%;background-color: black;overflow: hidden;z-index: 11;top: px;position: relative;
+
+}
+#announcement p{
+	color: whitesmoke;float: left;font-size: 17px;position: absolute;margin: 35px;top: -20px; font-family: "Belanosima";z-index: 13;width: 100%;min-width: 1300px;
+
+}
+#announcement img{
+	height: 30px;width: 30px;float: left;z-index: 11;position: absolute;top: 0px;float: left;z-index: 14;
+
+}
+#annoucementicon{
+	height: 30px;width: 30px;margin: 10px 5px 0 0;
+}
+#collapse{
+	height: 27px;width: 27px;position: absolute;overflow: hidden;border:white ;margin: 10px;z-index: 12;right: 0px;
+
+}
+#collapse img{
+	height: 28px;width: 27px;left: -6px;top: -2px;position: relative;
+
+}
+#nav{
+	height: 80px;width: 100%;background-color: white;box-shadow: 0.1px 0.1px 10px #8c8c8c;position: sticky;top: -10px;z-index: 10;min-width: 970px;overflow: hidden;z-index: 15;
+
+}
+#switch1{
+	height: 24px;width: 24px;background-color: black;border-radius: 50%;border: outset;top: -8px;position: relative;left: 0px;float: left;
+
+}
+#theme{
+	float: left;left: 60px;position: relative;top: 30px;width: 60px;height: 10px;border: solid 2px black;border-radius: 10px;position: absolute;left: 300px;
+
+}
+#switch1:active, #switch2:active{
+	border: inset;z-index: 4;
+
+}
+#switch2{
+	height: 24px;width: 24px;background-color: black;border-radius: 50%;border: outset;top: -8px;position: relative;right: 0px;float: right;display: none; z-index: 3; opacity: 0;
+
+}
+.options{
+	width: 15%;min-width: 400px;height: 40px;float: right;
+
+}
+.nav_options{
+	height: 58px;width: 45%;float: left;left: 0px;text-align: center;padding-top: 20px;
+
+}
+.nav_options:hover{
+	border-bottom: solid black 2px;position: relative;margin-left: 2px;
+
+}
+#nav img{
+	float: left;position: relative;height:145px;width:270px;left: px;top: px;
+
+}
+#nav a{
+	text-decoration: none;font: caption;padding-top: 20px;color: black;
+
+}
+#content{
+	height: 1020px;width: 100%;background-color: #d9d9d9;min-height: 650px;padding: 20px 0;min-width: 970px;
+
+}
+#main_contents{
+	height: 1200px;border-radius: 20px; width:68%;min-width: 400px;float: left;overflow: hidden;z-index: 7;
+}
+.main_content{
+	height: auto;width:100%;float: right;background-color: white;border-radius: 20px;margin: 0;box-shadow: 0.1px 0.1px 1px #8c8c8c;font-family: "Belanosima";z-index: 9;position: relative;overflow: hidden;z-index: 8;min-width: 500px;margin: 10px 0 10px 4px;
+
+}
+#two,#three,{
+	margin: 20px;
+}
+.main_content h1{
+	text-transform: uppercase;font-weight: 500px;font-size: 23px;margin: 30px;
+
+}
+.main_content p{
+	font-weight: 100px;font-size: 23px;margin: 30px;
+
+}
+#image_card{
+	height: 530px;min-width: 0%;width:30%;margin: 0px 3px;background-color: white;box-shadow: 1px 1px 2px #8c8c8c;border-radius: 20px;overflow: hidden;opacity: 0.9;position: sticky;top: 110px;z-index: 7;float: left;
+
+}
+#image_card h1 {
+	text-align: center;text-transform: uppercase;font: caption;letter-spacing: 1px;font-weight: 700;font-size: 35px;font-family:"Belanosima";
+
+}
+#image_card h2{
+	text-align: center;text-transform: uppercase;font: caption;letter-spacing: 1px;font-weight: 400;font-size: 25px;font-family: "Belanosima" ;
+
+}
+#horizon{
+	height: 2px;width: 100px;background-color: black;margin: 10px 35%;
+
+}
+#image_holder{
+	height: 320px;width: 320px;border-radius: 50%;background-color: silver;overflow: hidden;margin: 20px 30px;z-index: ;
+
+}
+#image_holder img{
+	height:400px ;width:320px ;
+
+}
+.social_logos{
+	height: 60px; width: 20px;
+}
+#footer{background-color: #4d4d4d;height: 200px;width: 100%;position: absolute;z-index: 15;
+}
+#footer p{
+	text-align: center;vertical-align: middle;font-family: "Belanosima";font-size: 30px;
+}
+#footer p{
+	text-align: center;line-height: 100px;
+}
+.social{width: 40%; height: 200px;background-color: #e6e6e6; float: left;border-radius: 10px;margin-left: 5%;overflow: hidden;align-items: center;margin-top: 20px;font-family: "Belanosima";text-align: center;box-shadow: 2px 2px 2px silver;
+}
+.social_links{top: -500px;position: relative;font-size: 22px;color: black;
+}
+
+#four img {height: 70px;width: 70px;filter: invert(10%);margin: 20px 0 20px 0;
+}
+#four{
+	height: 980px;display: none;
+}
+#four img:hover{
+	height: 80px;width: 80px;margin: 15px 0 15px 0;transition: 0.5s;
+}
+#four button{
+}
