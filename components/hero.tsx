@@ -17,42 +17,58 @@ export function Hero() {
       {/* Animated Background */}
       <div className="absolute inset-0 bg-gradient-to-br from-blue-50 via-white to-purple-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900" />
       
-      {/* Floating Elements */}
+      {/* Floating Blurred Bubbles */}
       <div className="absolute inset-0 overflow-hidden">
         <motion.div
-          className="absolute top-20 left-10 w-72 h-72 bg-blue-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob"
+          className="absolute top-20 left-10 w-96 h-96 bg-blue-400 rounded-full mix-blend-multiply filter blur-2xl opacity-60"
           animate={{
-            x: [0, 100, 0],
-            y: [0, -100, 0],
+            x: [0, 200, -100, 0],
+            y: [0, -150, 100, 0],
+            scale: [1, 1.3, 0.8, 1],
+          }}
+          transition={{
+            duration: 15,
+            repeat: Infinity,
+            ease: "easeInOut"
+          }}
+        />
+        <motion.div
+          className="absolute top-40 right-10 w-80 h-80 bg-purple-400 rounded-full mix-blend-multiply filter blur-2xl opacity-60"
+          animate={{
+            x: [0, -180, 120, 0],
+            y: [0, 120, -80, 0],
+            scale: [1, 0.7, 1.2, 1],
+          }}
+          transition={{
+            duration: 18,
+            repeat: Infinity,
+            ease: "easeInOut"
+          }}
+        />
+        <motion.div
+          className="absolute bottom-10 left-20 w-72 h-72 bg-pink-400 rounded-full mix-blend-multiply filter blur-2xl opacity-60"
+          animate={{
+            x: [0, 150, -80, 0],
+            y: [0, -100, 120, 0],
+            scale: [1, 1.1, 0.9, 1],
           }}
           transition={{
             duration: 20,
             repeat: Infinity,
-            ease: "linear"
+            ease: "easeInOut"
           }}
         />
         <motion.div
-          className="absolute top-40 right-10 w-72 h-72 bg-purple-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-2000"
+          className="absolute top-60 left-1/2 w-64 h-64 bg-cyan-400 rounded-full mix-blend-multiply filter blur-2xl opacity-50"
           animate={{
-            x: [0, -100, 0],
-            y: [0, 100, 0],
+            x: [0, -120, 160, 0],
+            y: [0, 80, -120, 0],
+            scale: [1, 1.4, 0.6, 1],
           }}
           transition={{
-            duration: 25,
+            duration: 22,
             repeat: Infinity,
-            ease: "linear"
-          }}
-        />
-        <motion.div
-          className="absolute -bottom-8 left-20 w-72 h-72 bg-pink-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-4000"
-          animate={{
-            x: [0, 100, 0],
-            y: [0, -100, 0],
-          }}
-          transition={{
-            duration: 30,
-            repeat: Infinity,
-            ease: "linear"
+            ease: "easeInOut"
           }}
         />
       </div>

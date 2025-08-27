@@ -26,11 +26,29 @@ export function Navbar() {
   }, [])
 
   const scrollToSection = (href: string) => {
-    const element = document.querySelector(href)
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" })
-    }
     setIsOpen(false)
+    
+    // Add a small delay to ensure menu closes first
+    setTimeout(() => {
+      const element = document.querySelector(href) as HTMLElement
+      if (element) {
+        // Use different scroll methods for better mobile compatibility
+        if ('scrollBehavior' in document.documentElement.style) {
+          element.scrollIntoView({ 
+            behavior: "smooth",
+            block: "start",
+            inline: "nearest"
+          })
+        } else {
+          // Fallback for older browsers/mobile devices
+          const elementPosition = element.offsetTop - 80 // Account for fixed navbar
+          window.scrollTo({
+            top: elementPosition,
+            behavior: "smooth"
+          })
+        }
+      }
+    }, 150)
   }
 
   return (
@@ -98,13 +116,18 @@ export function Navbar() {
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.3 }}
           >
-            <div className="px-4 py-6 space-y-4">
+            <div className="px-4 py-6 space-y-2">
               {navItems.map((item) => (
                 <motion.button
                   key={item.name}
-                  onClick={() => scrollToSection(item.href)}
-                  className="block w-full text-left text-foreground/80 hover:text-foreground transition-colors py-2"
+                  onClick={(e) => {
+                    e.preventDefault()
+                    e.stopPropagation()
+                    scrollToSection(item.href)
+                  }}
+                  className="block w-full text-left text-foreground/80 hover:text-foreground transition-colors py-4 px-2 rounded-lg hover:bg-foreground/5 active:bg-foreground/10 touch-manipulation"
                   whileHover={{ x: 10 }}
+                  whileTap={{ scale: 0.98 }}
                   transition={{ type: "spring", stiffness: 400, damping: 10 }}
                 >
                   {item.name}
