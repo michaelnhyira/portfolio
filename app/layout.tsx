@@ -12,6 +12,9 @@ export const metadata: Metadata = {
   keywords: 'web developer, React, JavaScript, HTML, CSS, portfolio, frontend developer',
   authors: [{ name: 'Michael Haven' }],
   creator: 'Michael Haven',
+  verification: {
+    google: 'GGrpjWgkP3qi1EGDNF6yn3bkf8AlrZo4M5K5V_nK_DU',
+  },
   icons: {
     icon: '/favicon.svg',
     shortcut: '/favicon.svg',
